@@ -17,4 +17,13 @@ for d in data:
 total = len(data)
 average = sum_len / total
 
-print(average)
+print('average = ', average)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+
+print('commit < len(100) :', len(new)) 
+print(new[0])
+print(new[1])
